@@ -9,7 +9,6 @@ The framework is designed to demonstrate real-world automation practices rather 
 - Selenium WebDriver
 - TestNG
 - Maven
-- Logback (logging)
 - Extent Reports (HTML reporting)
 
 ## Framework Highlights

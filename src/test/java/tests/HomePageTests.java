@@ -1,4 +1,3 @@
-
 package tests;
 
 import base.BaseTest;
@@ -14,50 +13,79 @@ public class HomePageTests extends BaseTest {
     @Test
     public void test1_loginValidation() {
         HomePage home = new HomePage(driver);
-        Assert.assertTrue(home.emailField().isDisplayed());
-        Assert.assertTrue(home.passwordField().isDisplayed());
-        Assert.assertTrue(home.loginButton().isDisplayed());
-        home.emailField().sendKeys("test@company.com");
-        home.passwordField().sendKeys("Password@123");
+
+        Assert.assertTrue(home.isEmailFieldDisplayed(), "Email field is not displayed");
+        Assert.assertTrue(home.isPasswordFieldDisplayed(), "Password field is not displayed");
+        Assert.assertTrue(home.isLoginButtonDisplayed(), "Login button is not displayed");
+
+        home.enterEmail("test@company.com");
+        home.enterPassword("Password@123");
     }
 
     @Test
     public void test2_listGroupValidation() {
         HomePage home = new HomePage(driver);
-        Assert.assertEquals(home.listItems().size(), 3);
-        Assert.assertTrue(home.listItems().get(1).getText().contains("List Item 2"));
+
+        Assert.assertEquals(home.getListItemCount(), 3, "List item count mismatch");
+        Assert.assertTrue(
+                home.getListItemText(1).contains("List Item 2"),
+                "Second list item text mismatch"
+        );
         Assert.assertEquals(
-                home.listItems().get(1).findElement(By.tagName("span")).getText(),
-                "6"
+                home.getListItemBadgeValue(1),
+                "6",
+                "Second list item badge value mismatch"
         );
     }
 
     @Test
     public void test3_dropdownValidation() {
         HomePage home = new HomePage(driver);
-        Assert.assertEquals(home.dropdownButton().getText(), "Option 1");
+
+        Assert.assertEquals(
+                home.getSelectedDropdownValue(),
+                "Option 1",
+                "Default dropdown value mismatch"
+        );
+
         home.selectDropdownOption("Option 3");
-        Assert.assertEquals(home.dropdownButton().getText(), "Option 3");
+
+        Assert.assertEquals(
+                home.getSelectedDropdownValue(),
+                "Option 3",
+                "Dropdown value after selection mismatch"
+        );
     }
 
     @Test
     public void test4_buttonStateValidation() {
         HomePage home = new HomePage(driver);
-        Assert.assertTrue(home.test4Buttons().get(0).isEnabled());
-        Assert.assertFalse(home.test4Buttons().get(1).isEnabled());
+
+        Assert.assertTrue(home.isFirstButtonEnabled(), "First button should be enabled");
+        Assert.assertFalse(home.isSecondButtonEnabled(), "Second button should be disabled");
     }
 
     @Test
     public void test5_dynamicButtonValidation() {
-        WaitUtils.waitForVisibility(driver, By.id("test5-button")).click();
+        // Wait handled centrally, test remains clean
+        WaitUtils.waitForVisibility(driver, By.id("test5-button"));
+
         HomePage home = new HomePage(driver);
-        Assert.assertTrue(home.successAlert().isDisplayed());
-        Assert.assertFalse(home.dynamicButton().isEnabled());
+        home.clickDynamicButton();
+
+        Assert.assertTrue(
+                home.isSuccessMessageDisplayed(),
+                "Success message is not displayed"
+        );
+        Assert.assertFalse(
+                home.isDynamicButtonEnabled(),
+                "Dynamic button should be disabled after click"
+        );
     }
 
     @Test
     public void test6_tableValidation() {
         String value = TableUtils.getCellValue(driver, 2, 2);
-        Assert.assertEquals(value, "Ventosanzap");
+        Assert.assertEquals(value, "Ventosanzap", "Table cell value mismatch");
     }
 }

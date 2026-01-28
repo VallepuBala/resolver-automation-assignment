@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-28T17:06:45 IST" name="Default suite" finished-at="2026-01-28T17:07:08 IST" duration-ms="23310">
+    <groups>
+    </groups>
+    <test started-at="2026-01-28T17:06:45 IST" name="Default test" finished-at="2026-01-28T17:07:08 IST" duration-ms="23310">
+      <class name="tests.HomePageTests">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:45 IST" name="startReport" finished-at="2026-01-28T17:06:45 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:45 IST" name="setup" finished-at="2026-01-28T17:06:48 IST" duration-ms="3041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test1_loginValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1_loginValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:48 IST" name="test1_loginValidation" finished-at="2026-01-28T17:06:50 IST" duration-ms="1844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_loginValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:50 IST" name="tearDown" finished-at="2026-01-28T17:06:50 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:50 IST" name="setup" finished-at="2026-01-28T17:06:52 IST" duration-ms="1630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test2_listGroupValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test2_listGroupValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:52 IST" name="test2_listGroupValidation" finished-at="2026-01-28T17:06:52 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_listGroupValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:52 IST" name="tearDown" finished-at="2026-01-28T17:06:52 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:52 IST" name="setup" finished-at="2026-01-28T17:06:54 IST" duration-ms="1480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test3_dropdownValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test3_dropdownValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:54 IST" name="test3_dropdownValidation" finished-at="2026-01-28T17:06:56 IST" duration-ms="1916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_dropdownValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:56 IST" name="tearDown" finished-at="2026-01-28T17:06:56 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:56 IST" name="setup" finished-at="2026-01-28T17:06:57 IST" duration-ms="1406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test4_buttonStateValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test4_buttonStateValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:57 IST" name="test4_buttonStateValidation" finished-at="2026-01-28T17:06:57 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_buttonStateValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:57 IST" name="tearDown" finished-at="2026-01-28T17:06:58 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:58 IST" name="setup" finished-at="2026-01-28T17:06:59 IST" duration-ms="1371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test5_dynamicButtonValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test5_dynamicButtonValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:06:59 IST" name="test5_dynamicButtonValidation" finished-at="2026-01-28T17:07:06 IST" duration-ms="7197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_dynamicButtonValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:07:06 IST" name="tearDown" finished-at="2026-01-28T17:07:06 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:07:06 IST" name="setup" finished-at="2026-01-28T17:07:08 IST" duration-ms="1429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTests.test6_tableValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test6_tableValidation()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:07:08 IST" name="test6_tableValidation" finished-at="2026-01-28T17:07:08 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_tableValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:07:08 IST" name="tearDown" finished-at="2026-01-28T17:07:08 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTests@411f53a0]" started-at="2026-01-28T17:07:08 IST" name="flushReport" finished-at="2026-01-28T17:07:09 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- tests.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
